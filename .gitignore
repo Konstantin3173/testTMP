@@ -1,2 +1,3 @@
-images\
-.docx
+images/
+*.jpg
+*.docx
