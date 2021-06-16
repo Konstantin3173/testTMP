@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	<!-- вставка с сайта https://fonts.google.com/ подключаем два шрифта -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<!-- конец вставки -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+		<div class="container"> <!-- в контейнере хранится ширина, не загромождаем его свойствами и стилями -->
+            <div class="header__inner"> <!-- создаём внутренную обёртку для header-а - "inner" -->
+                <a class="logo" href="#"> <!-- логотип является ссылкой, поэтому тэг <a>. т.к. не знаем что будет внутри, то '#' -->
+                    <img class="logo__link" src="images/My_Logo.png" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__list-link" href="#">О НАС</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">ДЕВУШКИ</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">ОТЗЫВЫ</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">УСЛОВИЯ</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+                <a class="phone" href="тел:89101001427">+7(910) 100-14-27</a>
+            </div>
+        </div>
+    </header>
+    <section class="top"> <!-- Создаем секцию -->
+        <div class="container"> <!-- создаём контейнер и делем его на 2 части для удобства -->
+            <div class="top__heading"> <!-- 1-я часть контейнера, состоит из правой и левой части -->
+                <div class="top__content">  <!-- левая часть. состоит из заголовка, текста и кнопки -->
+                    <h1 class="top__content-title">
+                        35photo.ru
+                        Красивые Девушки
+                    </h1>
+                    <p class="top__content-text">
+                        Все рассуждения мужчин не стоят ни одного чувства женщины (Вольтер).
+                    </p>
+                    <a class="application-btn" href="#">кноПка Скачать</a> <!-- кнопка сделана через ссылку -->
+                </div>
+                <div class="top__slider"> <!-- это правая часть: фотка и подпись -->
+
+                    <div class="top__slider-item">
+                        <img class="top__slider-images" src="images/DBond.jpg" alt="">
+                        <p class="top__slider-text">
+                            Красота — тоже добродетель, красивая женщина не может иметь недостатков (Шиллер)
+                        </p>
+                    </div>
+
+
+                    <div class="top__slider-item">
+                        <img class="top__slider-images" src="images/now and then2.jpg" alt="">
+                        <p class="top__slider-text">
+                            Красота — тоже добродетель, красивая женщина не может иметь недостатков (Шиллер)
+                        </p>
+                    </div>
+
+                    <div class="top__slider-item">
+                        <img class="top__slider-images" src="images/Yana.jpg" alt="">
+                        <p class="top__slider-text">
+                            Красота — тоже добродетель, красивая женщина не может иметь недостатков (Шиллер)
+                        </p>
+                    </div>
+
+                    <div class="top__slider-item">
+                        <img class="top__slider-images" src="images/Fox2.jpg" alt="">
+                        <p class="top__slider-text">
+                            Кто ты? Я тебя не знаю.
+                        </p>
+                    </div>
+
+                    <div class="top__slider-item">
+                        <img class="top__slider-images" src="images/пираты финского залива.jpg" alt="">
+                        <p class="top__slider-text">
+                            Красота — тоже добродетель, красивая женщина не может иметь недостатков (Шиллер)
+                        </p>
+                    </div>
+
+                    <div class="top__slider-item">
+                        <img class="top__slider-images" src="images/Viktoria.jpg" alt="">
+                        <p class="top__slider-text">
+                            Красота — тоже добродетель, красивая женщина не может иметь недостатков (Шиллер)
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="top__bottom"> <!-- нижняя часть секции сама состоит из двух частей: 3 items и 2 links -->
+                <div class="top__items"> <!-- первая часть: внутри 3 картинки с 3 текстами -->
+                    <div class="top__item1">
+                        <img class="top__item-img" src="images/icon1.svg" alt="">
+                        <p class="top__item-text">
+                            Более 300 девушек:
+                            одетые красавицы
+                        </p>
+                    </div>
+                    <div class="top__item2">
+                        <img class="top__item-img" src="images/icon2.svg" alt="">
+                        <p class="top__item-text">
+                            Более 300 девушек:
+                            раздетые красавицы
+                        </p>
+                    </div>
+                    <div class="top__item3">
+                        <img class="top__item-img" src="images/icon3.svg" alt="">
+                        <p class="top__item-text">
+                            Другие фото:
+                            Природа и животные
+                        </p>
+                    </div>
+                </div>
+                <div class="top__links">
+                    <a class="top__link" href="#" >Условия аренды</a>
+                    <a class="top__link" href="#" >Публичный договор</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

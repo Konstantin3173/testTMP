@@ -1,0 +1,143 @@
+//Перенастраиваем на border-box [до 10-й строки]
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+	box-sizing: inherit;
+}
+
+a{
+	text-decoration: none; /* убрали подчёркивание у всех ссылок*/
+}
+
+.container{
+	max-width: 1220px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+body{
+	color: #1b1818;
+	font-size: 16px;
+	font-style: 18px;
+	/* скопировали 2 фонта ( с https://fonts.google.com/ ) */
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+}
+
+.header{
+	background: #332208;
+}
+
+.header__inner{
+	display: flex; /* расставляет элементы заголовка по вертикали */
+	justify-content: space-between; /* раскидывает крайние по краям, средние по центу */
+	align-items: center; /* вертикальное выравнивание */
+	height: 100px; /* высота заголовка */
+}
+
+.menu__list{
+	display: flex; /* расставляет элементы середины меню по вертикали */
+}
+
+.menu__item{
+	margin: 0 15px;
+}
+
+.menu__list-link{
+	text-transform: uppercase;
+	color: #fefefe; /* белый цвет меню в центре */
+	font-size: 18px;
+	line-height: 21px;
+	padding-bottom: 5px; /* отступ вниз для будущего подчёркивания */
+	transition: all .5s; /* плавное появление подчёркивания в течение 0,5 секунды*/
+	border-bottom: 1px solid transparent; /* прозрачный цвет подчёркивания, чтобы сработал 'transition' */
+}
+
+.menu__list-link:hover{
+	border-bottom: 1px solid #fefefe;
+}
+
+.phone{
+	color: #fefefe; /* белый цвет для номера телефона */
+	font-size: 18px;
+	line-height: 21px;
+}
+/*-----------------------------------------------------------------*/
+.top__heading{
+	display: flex; /* расставляет элементы контейнера по вертикали */
+	padding: 50px 0 30px;
+}
+
+.top__content{
+	text-align: center;
+	padding-top: 90px;
+	width: 50%;
+}
+
+.top__content-title{
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500px;
+	font-size: 48px;
+	line-height: 58px;
+	margin: 0 auto 20px;
+	max-width: 455px;
+}
+.top__content-text{
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0 auto 60px;
+	max-width: 455px;
+}
+
+.application-btn{
+	text-transform: uppercase;
+	color: #fefefe;
+	background: #c5ac2d;
+	padding: 16px 19px 15px;
+	transition: all .5s; /* плавная смена цвета при наведении */
+	border: 1px solid transparent;
+}
+
+/* при наведении на кнопку color и background меняются цветом */
+.application-btn:hover{
+	color: #c5ac2d;
+	background: #fefefe;
+	border: 1px solid #c5ac2d;
+	
+}
+
+.top__slider{
+	width: 50%;
+}
+
+.top__slider.slick-dots{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transition: translateY(-50%)
+}
+
+.slick-dots{
+	list-style: none; //убрали точки у нумерации слайдов
+}
+
+.slick-dots button{
+	font-size: 0;
+	width: 8px;
+	height: 8px;
+	background-color: #332208;
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+	margin: 0 auto;
+	
+}
+
+.slick-active button{
+	width: 16px;
+	height: 16px;
+}
